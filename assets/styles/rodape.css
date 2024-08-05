@@ -1,0 +1,32 @@
+/* Rodapé */
+.rodape {
+    background-image: var(--cor-fundo-rodape);
+    padding: 40px 0 20px 0;
+    text-align: center;
+    color: var(--cor-cinza-medio); 
+}
+
+.rodape p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--cor-cinza-medio);
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--cor-cinza-escuro-rodape);
+    transition: color 0.3s ease; 
+}
+
+.rodape a:hover {
+    text-decoration: underline;
+    color: var(--cor-preto); 
+}
+
+
+/* Media Queries para Rodapé Responsivo */
+@media screen and (max-width: 768px) {
+    .rodape p {
+        font-size: 12px; 
+    }
+}

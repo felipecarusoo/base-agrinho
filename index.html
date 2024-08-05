@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2024</title>
+    <meta name="author" content="Luiz Henrique Slusarz">
+    <meta property="og:title" content="Projeto Agrinho - Agrinho 2024">
+    <link rel="shortcut icon" href="assets/images/favicon1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho" class="cabecalho">
+        <img src="assets/images/logo.png" alt="Logo do Agrinho">
+        <h1 class="cabecalho-titulo">TEMA DO SEU SITE</h1>
+        <nav class="cabecalho-nav">
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista-item"><a href="#inicio">Início</a></li>
+            </ul>
+        </nav>
+        <button class="nav-button" onclick="openNav()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+    </header>
+    
+    <div id="myNav" class="sobreposto">
+        <a href="javascript:void(0)" class="fechar-botao" onclick="closeNav()">&times;</a>
+        <div class="sobreposto-conteudo">
+            <a href="#inicio" onclick="closeNav()">Início</a>
+        </div>
+    </div>
+    
+    <main>
+        <section class="sugestao-sessao" id="inicio">
+            <section class="imagem-fundo">
+                <div class="imagem-camada camada1"></div>
+            </section>                      
+            <section class="sobre">
+                <div class="caixa-principal">
+                    <h1 class="titulo-principal">Do Campo para a Cidade e de Volta: Um Ciclo de Transformação!</h1>
+                    <h2 class="subtitulo">Você já pensou em como a cidade pode transformar a sua vida e a vida da sua família?</h2>
+                    <p class="texto">A cidade, com suas universidades, escolas técnicas e centros de pesquisa, é um verdadeiro celeiro de conhecimento. É lá que você pode aprender as mais recentes tecnologias e técnicas de produção, se conectar com outros profissionais da área e expandir seus horizontes.</p>
+                    <h3 class="subtitulo">Mas por que estudar na cidade?</h3>
+                    <ul class="lista-beneficios">
+                        <li class="item-beneficio">Aumentar sua produtividade: Adote novas tecnologias e práticas agrícolas que farão sua produção ser mais eficiente e sustentável.</li>
+                        <li class="item-beneficio">Aumentar sua renda: Produza alimentos de maior qualidade e agregue valor aos seus produtos, alcançando novos mercados.</li>
+                        <li class="item-beneficio">Melhorar a qualidade de vida: Tenha acesso a melhores condições de trabalho e de vida para você e sua família.</li>
+                        <li class="item-beneficio">Tornar-se um líder em sua comunidade: Compartilhe seus conhecimentos e inspire outros agricultores a buscarem o desenvolvimento.</li>
+                    </ul>
+                </div>
+                <p class="subtitulo">Agora que você já sabe a importância de estudar na cidade, que tal umas dicas para facilitar sua vinda?</p>
+            </section>                      
+            <article id="sugestao">
+                <h2 class="sugestao-cta">Sugestões</h2>
+                <div class="sugestao-grid">
+                    <div class="sugestao-card">
+                        <a href="assets/pages/faculdades.html">
+                            <figure>
+                                <img src="assets/images/faculdade.jpg" alt="Imagem Faculdades">
+                            </figure>
+                            <div class="sugestao-card-descricao">
+                                <p>Principais Faculdades</p>
+                                <button>Ver Mais</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="caixa">
+            <p class="creditos">
+                Desenvolvido por <a href="link do github" target="_blank" rel="noopener noreferrer">Seu nome</a>, Orientado por <a href="https://www.linkedin.com/in/felipe-carusoo/" target="_blank" rel="noopener noreferrer">Felipe Caruso</a>
+            </p>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+
+/* Imagem de Fundo */
+.imagem-fundo {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background: url('../images/fundo1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Seção Sobre */
+.sobre {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--cor-cinza-claro);
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.lista-beneficios {
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Seção das Sugestões */
+#sugestao {
+    background-color: var(--cor-branco);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.sugestao-cta {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sugestao-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sugestao-card {
+    width: 250px;
+    height: 250px;
+    background-color: var(--cor-branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--cor-amarelo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.sugestao-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.sugestao-card-descricao {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.sugestao-card-descricao p {
+    font-weight: bold;
+}
+
+.sugestao-card-descricao button {
+    font-size: 14px;
+    border: 1px solid var(--cor-preto);
+    background-color: transparent;
+    color: var(--cor-preto);
+    padding: 5px 10px;
+    transition: background-color 0.2s;
+}
+
+.sugestao-card-descricao button:hover {
+    background-color: var(--cor-verde-claro);
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .imagem-fundo {
+        height: 500px; 
+    }
+
+    .sugestao-cta {
+        font-size: 1.5rem; 
+    }
+
+    .sugestao-card {
+        width: 200px;
+        height: 200px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .imagem-fundo {
+        height: 400px; 
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem; 
+    }
+
+    .subtitulo {
+        font-size: 1rem; 
+    }
+
+    .texto {
+        font-size: 0.9rem; 
+    }
+
+    .sugestao-cta {
+        font-size: 1.25rem; 
+    }
+
+    .sugestao-card {
+        width: 180px;
+        height: 180px; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .imagem-fundo {
+        height: 300px; 
+    }
+
+    .titulo-principal {
+        font-size: 1.2rem; 
+    }
+
+    .subtitulo {
+        font-size: 0.9rem; 
+    }
+
+    .texto {
+        font-size: 0.8rem; 
+    }
+
+    .sugestao-cta {
+        font-size: 1rem; 
+    }
+
+    .sugestao-card {
+        width: 150px;
+        height: 150px; 
+    }
+}

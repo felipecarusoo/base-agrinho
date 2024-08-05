@@ -1,0 +1,135 @@
+/* Cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-image: var(--cor-fundo-cabecalho);
+    color: var(--cor-preto);
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.cabecalho img {
+    width: 100px;
+}
+
+.cabecalho-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+/* Navegação */
+.cabecalho-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.cabecalho-lista {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho-lista a {
+    color: var(--cor-preto);
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.cabecalho-lista a:hover {
+    color: var(--cor-hover);
+    font-weight: bolder;
+}
+
+/* Botão de Navegação */
+.nav-button {
+    display: none; 
+    border: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.nav-button i {
+    color: var(--cor-branco);
+}
+
+/* Sobreposição */
+.sobreposto {
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+}
+
+.sobreposto-conteudo {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sobreposto a {
+    padding: 8px;
+    text-decoration: none;
+    color: var(--cor-cinza-medio-rodape);
+    display: block;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.sobreposto a:hover {
+    color: var(--cor-cinza-claro-rodape);
+}
+
+.sobreposto .fechar-botao {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/* Media Queries para Navegação Responsiva */
+@media screen and (max-width: 768px) {
+    .cabecalho-nav {
+        display: none; 
+    }
+
+    .nav-button {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cabecalho-titulo {
+        font-size: 20px; 
+    }
+
+    .cabecalho-lista a {
+        font-size: 20px; 
+    }
+
+    .sobreposto a {
+        font-size: 20px; 
+    }
+
+    .sobreposto .fechar-botao {
+        font-size: 40px; 
+    }
+}

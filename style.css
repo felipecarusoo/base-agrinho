@@ -1,0 +1,176 @@
+/* Importações de variáveis e resets */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); 
+@import url('assets/styles/cabecalho.css'); 
+@import url('assets/styles/rodape.css'); 
+@import url('assets/styles/main.css'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis */
+:root {
+    --cor-preto: #000000;
+    --cor-branco: #ffffff;
+    --cor-cinza-claro: #f5f5f5;
+    --cor-cinza-medio: #777777;
+    --cor-cinza-escuro: #c7c3c3;
+    --cor-azul-claro: #3498db;
+    --cor-azul-escuro: #2980b9;
+    --cor-verde-claro: #7ac693;
+    --cor-verde-escuro: #135B2B;
+    --cor-fundo-rodape: linear-gradient(to bottom, rgb(255, 255, 255), rgb(248, 248, 160));
+    --cor-cinza-medio-rodape: #818181;
+    --cor-cinza-claro-rodape: #f1f1f1;
+    --cor-fundo-cabecalho: linear-gradient(to top, rgb(255, 255, 255), rgb(248, 248, 160));
+    --cor-hover: rgb(12, 128, 10);
+    --cor-texto: #333;
+    --cor-borda: #ddd; 
+    --cor-amarelo: #f1c40f;
+    --sombra-leve: rgba(0, 0, 0, 0.1);
+    --fundo-escuro: rgba(0,0,0,0.9); 
+}
+
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-branco); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--cor-texto);
+    scroll-behavior: smooth; 
+}
+
+/* Estilos de Links */
+a {
+    text-decoration: none;
+    color: var(--cor-preto);
+}
+
+a:hover {
+    color: var(--cor-hover);
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para Botões Globais */
+button {
+    font-family: inherit; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Hambúrguer */
+.nav-button {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--cor-preto); 
+}
+
+/* Estilo do Menu Lateral (sobreposto) */
+.sobreposto {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--fundo-escuro);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sobreposto-conteudo {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.sobreposto-conteudo a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--cor-branco); 
+    display: block;
+    transition: 0.3s;
+}
+
+.sobreposto-conteudo a:hover {
+    color: var(--cor-hover);
+}
+
+.fechar-botao {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    color: var(--cor-branco); 
+    text-decoration: none;
+}
+
+/* Estilos para o Cabeçalho */
+.cabecalho {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--cor-fundo-cabecalho);
+}
+
+.cabecalho-titulo {
+    font-size: 1.5rem; 
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px) {
+    .cabecalho-lista-item {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-button {
+        display: block; 
+    }
+
+    .cabecalho-lista-item {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sobreposto-conteudo a {
+        font-size: 1.5rem; 
+    }
+
+    .cabecalho-titulo {
+        font-size: 1.2rem; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sobreposto-conteudo a {
+        font-size: 1.2rem; 
+    }
+
+    .cabecalho-titulo {
+        font-size: 0.7rem; 
+    }
+}
